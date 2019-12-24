@@ -1,0 +1,45 @@
+highlighter: rouge
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: 'highlight'
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+
+paginate: 7
+paginate_path: "page:num"
+layout: post
+permalink: /:categories/:title
+excerpt_separator: "[-----]"
+
+url: https://unifreak.github.io/ # Replace this with your site's url
+name: my_blog # Will be displayed on every page's header
+title: site title # Site's default title
+shout: # Will be displayed on page's header
+  - on the way to death
+  - on the way of learning
+description: "Some short description on your site"
+
+disqus:
+  shortname: 'unifreak' # Replace this with your disqus shortname
+  comments: true # Global toggle on/off disqus feature
+
+google_analytics:
+  id: "" # Replace with your google analytics tracking id
+
+collections: # Add series here
+  demo_series:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "post"

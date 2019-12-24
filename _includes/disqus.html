@@ -1,0 +1,21 @@
+<!--
+  The Disqus lazy loading.
+  Powered by: https://osvaldas.info/lazy-loading-disqus-comments
+-->
+
+<div id="disqus" class="pt-2 pb-4">
+</div>
+
+<script src="{{ site.baseurl }}/assets/js/jquery.disqusloader.min.js"></script>
+<script>
+  var options = {
+    scriptUrl: '//{{ site.disqus.shortname }}.disqus.com/embed.js',
+
+    disqusConfig: function() {
+      this.page.url = '{{ site.url | append: site.baseurl | append: page.url }}';
+      this.page.identifier = '{{ page.url }}';
+    }
+  };
+
+  $.disqusLoader('#disqus', options);
+</script>

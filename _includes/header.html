@@ -1,0 +1,44 @@
+<header id="l-header">
+    <div class="container">
+        <div class="row logo">
+            <div class="col-lg-7">
+                <h1>{{ site.name }}</h1>
+            </div>
+
+            <div class="col-lg-5">
+              {% for line in site.shout %}
+                <p>{{ line }}</p>
+              {% endfor %}
+            </div>
+        </div>
+
+        <div class="row navicon">
+            <a href=""><i class="fa fa-navicon"></i></a>
+        </div>
+
+        <div class="row navbar">
+            <nav class="col-lg-8 col-md-8 col-xs-12">
+                <ul class="row">
+                    <li class="col-lg-3"><a href="{{ site.url }}">HOME</a></li>
+                    <li class="col-lg-3">
+                        <ul class="subnav">
+                            <a href="javascript:void(0)">POST</a>
+                            <li><a href="{{ site.url }}/category">CATEGORY</a></li>
+                            <li><a href="{{ site.url }}/tag">TAG</a></li>
+                        </ul>
+                    </li>
+                    <li class="col-lg-3"><a href="{{ site.url }}/series">SERIES</a></li>
+                    <li class="col-lg-3"><a href="{{ site.url }}/about">ABOUT</a></li>
+                </ul>
+            </nav>
+
+            <div class="search col-lg-4 col-md-4 col-xs-12">
+                <form>
+                    <label for="search"></label>
+                    <input id="search-input" name="serach" type="text" placeholder="Search Blog Posts...">
+                    <i class="fa fa-search"></i>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>

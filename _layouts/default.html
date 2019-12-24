@@ -1,0 +1,30 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html>
+<head>
+  {% include head.html %}
+</head>
+
+<!-- bare layout means not header and footer
+  like resume
+-->
+{% unless layout.bare %}
+  <body>
+    {% include header.html %}
+
+    <section id="l-main">
+      <div class="container">
+        {% include search_result.html %}
+        {{ content }}
+      </div>
+    </section>
+
+    {% include footer.html %}
+  </body>
+{% else %}
+  {{ content }}
+{% endunless %}
+
+</html>

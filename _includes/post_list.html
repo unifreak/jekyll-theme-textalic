@@ -1,0 +1,42 @@
+{% if paginator %}
+    {% for post in paginator.posts %}
+        {% include post_list_item.html %}
+    {% endfor %}
+{% else %}
+    {% for post in include.posts %}
+        {% if post.tags or post.category %}
+            {% include post_list_item.html %}
+            {% assign displayPagi = true %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% if displayPagi or paginator %}
+<div class="row" id="paginator">
+    {% if paginator.total_pages > 1 %}
+        {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | prepend: site.url }}">«</a>
+        {% endif %}
+
+        {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+                <span class="active">{{ page }}</span>
+            {% elsif page == 1 %}
+                <a href="{{ site.url }}">{{ page }}</a>
+            {% else %}
+                <a href="{{ site.url }}/{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a>
+            {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | prepend: site.url }}">»</a>
+        {% endif %}
+    {% elsif jsPagiLoaded != true %}
+        <script type="text/javascript" src="{{ site.url }}/assets/js/pagination.js"></script>
+        <script type="text/javascript" src="{{ site.url }}/assets/js/list_pagi.js"></script>
+        {% assign jsPagiLoaded = true %}
+    {% endif %}
+
+</div>
+{% endif %}
+{% assign displayPagi = false %}
