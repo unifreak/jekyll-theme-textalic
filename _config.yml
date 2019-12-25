@@ -19,22 +19,22 @@ layout: post
 permalink: /:categories/:title
 excerpt_separator: "[-----]"
 
-url: https://unifreak.github.io/ # Replace this with your site's url
-name: my_blog # Will be displayed on every page's header
-title: site title # Site's default title
-shout: # Will be displayed on page's header
-  - on the way to death
-  - on the way of learning
-description: "Some short description on your site"
+url: "https://www.example.com/" # Required: replace this with your domain
+name: textalic # Required: will be displayed on every page's header
+title: site title # Required: site's default title
+shout: # Required: **TWO** lines, will be displayed on page's header.
+  - one liner one...
+  - one liner two...
+description: "Some short description on your site" # Required
 
-disqus:
-  shortname: 'unifreak' # Replace this with your disqus shortname
-  comments: true # Global toggle on/off disqus feature
+disqus: # Optional
+  shortname:  # Add your disqus shortname here
+  comments: on # Global toggle on/off disqus feature
 
-google_analytics:
+google_analytics: # Optional
   id: "" # Replace with your google analytics tracking id
 
-collections: # Add series here
+collections: # Define post series here
   demo_series:
     output: true
 

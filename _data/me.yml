@@ -1,12 +1,11 @@
-# About page & Footer
+# These data will be shown in /about page and every page footer
 
-name: "Your Name"
+name: "YOUR NAME"
 job: "Job Title"
 hi: "HIYA!"
 avatar_img: "/assets/img/me.png" # path to your avatar
 intro:
-  - "Some thing about"
-  - "Yourself"
+  - "Some thing about yourself"
   - "Can have multiple lines"
 skills:
   - name: "Programming"
