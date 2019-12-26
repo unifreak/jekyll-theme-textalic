@@ -1,5 +1,7 @@
 # Jekyll Theme Textalic
 
+[![feature_jt](https://img.shields.io/badge/featured%20on-JT-red.svg)](https://jekyll-themes.com)
+
 ![mockup](./assets/img/mockup.png)
 
 **Textalic** is a simple, responsive jekyll theme focus on blogging. Here is a [live demo](https://unifreak.github.io).
