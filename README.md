@@ -4,7 +4,7 @@
 
 ![mockup](./assets/img/mockup.png)
 
-**Textalic** is a simple, responsive jekyll theme focus on blogging. Here is a [live demo](https://unifreak.github.io).
+**Textalic** is a simple, responsive jekyll theme focus on blogging. Here is a [live demo](https://unifreak.github.io/jekyll-theme-textalic/).
 
 ## Features
 
