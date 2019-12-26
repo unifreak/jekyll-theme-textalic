@@ -59,6 +59,6 @@ $(document).ready(function() {
   SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('search-result'),
-    json: '/search.json'
+    json: "{{ '/search.json' | relative_url }}"
   });
 </script>

@@ -27,12 +27,12 @@ shout: # Required: **TWO** lines, will be displayed on page's header.
   - one liner two...
 description: "Some short description on your site" # Required
 
-disqus: # Optional
-  shortname:  # Add your disqus shortname here
-  comments: on # Global toggle on/off disqus feature
+disqus:
+  comments: true # Global toggle on/off disqus comment
+  shortname: disqus # Required if you use disqus. Repalce with your disqus shortname here
 
-google_analytics: # Optional
-  id: "" # Replace with your google analytics tracking id
+google_analytics:
+  id: "" # Required if you use google analytics. Replace with your tracking id here
 
 collections: # Define post series here
   demo_series:
