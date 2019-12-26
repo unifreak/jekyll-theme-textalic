@@ -29,7 +29,7 @@ description: "Some short description on your site" # Required
 
 disqus:
   comments: true # Global toggle on/off disqus comment
-  shortname: disqus # Required if you use disqus. Repalce with your disqus shortname here
+  shortname: unifreak # Required if you use disqus. Repalce with your disqus shortname here
 
 google_analytics:
   id: "" # Required if you use google analytics. Replace with your tracking id here
