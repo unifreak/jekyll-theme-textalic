@@ -19,7 +19,7 @@ layout: post
 permalink: /:categories/:title
 excerpt_separator: "[-----]"
 
-url: "https://www.example.com/" # Required: replace this with your domain
+url: # Required: replace this with your domain
 name: textalic # Required: will be displayed on every page's header
 title: site title # Required: site's default title
 shout: # Required: **TWO** lines, will be displayed on page's header.

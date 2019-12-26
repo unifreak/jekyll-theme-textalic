@@ -1,4 +1,5 @@
 # These data will be shown in /about page and every page footer
+# Replace these with your own personal info
 
 name: "YOUR NAME"
 job: "Job Title"
@@ -10,17 +11,17 @@ intro:
 skills:
   - name: "Programming"
     icon-class: "fa fa-terminal"
-    list: ["PHP", "Python", "Shell", "C", "SQL", "HTML / CSS", "JS / ES6", "jQuery", "Markdown", "Regex"]
+    list: ["PHP", "Python", "Shell", "C", "SQL"]
   - name: "Framework"
     icon-class: "fa fa-th-list"
-    list: ["Laravel / Lumen", "ThinkPHP", "Yii", "Flask", "Vue.js", "SASS", "Bootstrap", "jQuery", "Liquid"]
+    list: ["Laravel / Lumen", "ThinkPHP", "Yii", "Flask"]
   - name: "Tools"
     icon-class: "fa fa-cogs"
-    list: ["Linux", "Docker", "Git", "SublimeText", "MySQL", "Nginx", "Redis", "Composer", "Jekyll"]
+    list: ["Linux", "Docker", "Git", "SublimeText"]
 
-display_name: UniFreak
+display_name: "YOUR NAME"
 contact:
   - {name: "Mobile", icon-class: "fa fa-phone-square", text: "123 4567 8910", link: "tel: 123 4567 8010"}
   - {name: "Email", icon-class: "fa fa-envelope", text: "example@example.com", link: "mailto: example@example.com"}
 social:
-  - {name: "GitHub", icon-class: "fa fa-github-square", text: "https://github.com/unifreak", link: "https://github.com/UniFreak"}
+  - {name: "GitHub", icon-class: "fa fa-github-square", text: "https://github.com", link: "https://github.com"}
