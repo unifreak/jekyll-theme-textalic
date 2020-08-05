@@ -73,7 +73,7 @@ You also should replace the `/favicon.ico` and `/assets/img/me.png` file with yo
 
 ### Run locally
 
-Run `bundle exec serve --watch` to run it locally.
+Run `bundle exec jekyll serve --watch` to run it locally.
 
 ## Blogging
 
