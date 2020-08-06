@@ -1,8 +1,10 @@
 # Jekyll Theme Textalic
 
+[![feature_jt](https://img.shields.io/badge/featured%20on-JT-red.svg)](https://jekyll-themes.com)
+
 ![mockup](./assets/img/mockup.png)
 
-**Textalic** is a simple, responsive jekyll theme focus on blogging. Here is a [live demo](https://unifreak.github.io).
+**Textalic** is a simple, responsive jekyll theme focus on blogging. Here is a [live demo](https://unifreak.github.io/jekyll-theme-textalic/).
 
 ## Features
 
@@ -71,7 +73,7 @@ You also should replace the `/favicon.ico` and `/assets/img/me.png` file with yo
 
 ### Run locally
 
-Run `bundle exec serve --watch` to run it locally.
+Run `bundle exec jekyll serve --watch` to run it locally.
 
 ## Blogging
 
