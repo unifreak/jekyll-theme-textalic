@@ -12,7 +12,7 @@ assert sys.version_info >= (3, 5)
 
 
 
-\# 사이킷런 ≥0.20 필수
+# 사이킷런 ≥0.20 필수
 
 import sklearn
 
@@ -20,7 +20,7 @@ assert sklearn.__version__ >= "0.20"
 
 
 
-\# 공통 모듈 임포트
+# 공통 모듈 임포트
 
 import numpy as np
 
@@ -28,13 +28,13 @@ import os
 
 
 
-\# 노트북 실행 결과를 동일하게 유지하기 위해
+# 노트북 실행 결과를 동일하게 유지하기 위해
 
 np.random.seed(42)
 
 
 
-\# 깔끔한 그래프 출력을 위해
+# 깔끔한 그래프 출력을 위해
 
 %matplotlib inline
 
@@ -50,7 +50,7 @@ mpl.rc('ytick', labelsize=12)
 
 
 
-\# 그림을 저장할 위치
+# 그림을 저장할 위치
 
 PROJECT_ROOT_DIR = "."
 
@@ -76,10 +76,29 @@ def save_fig(fig_id, tight_layout=True, fig_extension="png", resolution=300):
 
   
 
-\# 어레이 데이터를 csv 파일로 저장하기
+# 어레이 데이터를 csv 파일로 저장하기
 
 def save_data(fileName, arrayName, header=''):
 
   np.savetxt(fileName, arrayName, delimiter=',', header=header, comments='')
 ```
+
+### 그다음 이번 회귀에서 사용할 붓꽃 데이터를 로드합니다
+
+```from sklearn import datasets
+iris = datasets.load_iris() 
+
+### 데이터를 로드했다면 품종 여부를 판정하는데 사용되는 데이터셋을 지정해줍니다
+
+``` X = iris["data"][:, 3:]                   # 1개의 특성(꽃잎 너비)만 사용
+y = (iris["target"] == 2).astype(np.int)  # 버지니카(Virginica) 품종일 때 1(양성)
+```
+
+### 모든 샘플에 편향을 추가해줍니다
+
+```X_with_bias = np.c_[np.ones([len(X), 1]), X]```
+
+### 결과를 일정하게 유지하기 위해 랜덤 시드를 지정해줍시다
+
+```np.random.seed(2042)```
 
