@@ -5,6 +5,7 @@ tags: [homework]
 
 ## 과제 1번: 조기 종료를 사용한 배치 경사 하강법으로 로지스틱 회귀를 구현하라. 단, 사이킷런을 전혀 사용하지 않아야 한다.
 
+### 시작하기에 앞서 아래와같이 기본적인 세팅을 합시다
 ```\# 파이썬 ≥3.5 필수
 import sys
 
@@ -81,5 +82,29 @@ def save_fig(fig_id, tight_layout=True, fig_extension="png", resolution=300):
 def save_data(fileName, arrayName, header=''):
 
   np.savetxt(fileName, arrayName, delimiter=',', header=header, comments='')
+  
+from sklearn import datasets
+iris = datasets.load_iris()
 ```
 
+### 그다음 이번 회귀에서 사용할 붓꽃 데이터를 로드합니다
+``` from sklearn import datasets
+iris = datasets.load_iris() 
+```
+
+### 데이터를 로드했다면 품종 여부를 판정하는데 사용되는 데이터셋을 지정해줍니다
+```X = iris["data"][:, 3:]                   # 1개의 특성(꽃잎 너비)만 사용
+y = (iris["target"] == 2).astype(np.int)  # 버지니카(Virginica) 품종일 때 1(양성)
+```
+
+### 모든 샘플에 편향을 추가해줍니다
+```X_with_bias = np.c_[np.ones([len(X), 1]), X]
+```
+
+### 결과를 일정하게 유지하기 위해 랜덤 시드를 지정해줍시다
+```np.random.seed(2042)
+```
+
+데이터셋 분할
+
+데이터셋을 훈련, 검증, 테스트 용도로 6대 2대 2의 비율로 무작위로 분할
