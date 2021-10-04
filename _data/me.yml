@@ -1,13 +1,12 @@
 # These data will be shown in /about page and every page footer
 # Replace these with your own personal info
 
-name: "YOUR NAME"
-job: "Job Title"
-hi: "HIYA!"
+name: "유정식"
+job: "대학생"
+hi: "반갑습니다~"
 avatar_img: "/assets/img/me.png" # path to your avatar
 intro:
-  - "Some thing about yourself"
-  - "Can have multiple lines"
+  - "프로그래밍을 공부중입니다"
 skills:
   - name: "Programming"
     icon-class: "fa fa-terminal"
