@@ -20,7 +20,7 @@ permalink: /:categories/:title
 excerpt_separator: "[-----]"
 
 url: # Required: replace this with your domain
-name: textalic # Required: will be displayed on every page's header
+name: 딥러닝을 공부하자 # Required: will be displayed on every page's header
 title: site title # Required: site's default title
 shout: # Required: **TWO** lines, will be displayed on page's header.
   - one liner one...
