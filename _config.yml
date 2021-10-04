@@ -20,7 +20,7 @@ permalink: /:categories/:title
 excerpt_separator: "[-----]"
 
 url: # Required: replace this with your domain
-name: DeepLearning # Required: will be displayed on every page's header
+name: D. # Required: will be displayed on every page's header
 title: 딥러닝을 공부하자 # Required: site's default title
 shout: # Required: **TWO** lines, will be displayed on page's header.
   - Always
