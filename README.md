@@ -9,6 +9,7 @@
 ## Features
 
 - Github flavor markdown rendering
+- Letax math notation support via mathjax
 - Post category, tag and series
 - Code highlighting
 - Autogenerate table of content
@@ -80,6 +81,10 @@ Run `bundle exec jekyll serve --watch` to run it locally.
 You can begin writting your posts under `/_posts` folder. See [Jekyll doc on posts](https://jekyllrb.com/docs/posts/).
 
 Posts are automatically grouped under site's post/category and post/tag menu. You can define post's category and tags in the post's [front matter](https://jekyllrb.com/docs/front-matter/), using `category` and `tags` front matter block.
+
+## LeTax Support
+
+Wrap your letax codes between `$$`. See the live demo site.
 
 ### Series
 
