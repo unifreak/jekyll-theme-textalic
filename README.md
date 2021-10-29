@@ -9,7 +9,7 @@
 ## Features
 
 - Github flavor markdown rendering
-- Letax math notation support via mathjax
+- Letax and ascii math notation support via mathjax
 - Post category, tag and series
 - Code highlighting
 - Autogenerate table of content
@@ -82,9 +82,13 @@ You can begin writting your posts under `/_posts` folder. See [Jekyll doc on pos
 
 Posts are automatically grouped under site's post/category and post/tag menu. You can define post's category and tags in the post's [front matter](https://jekyllrb.com/docs/front-matter/), using `category` and `tags` front matter block.
 
-## LeTax Support
+## Math Notation Support
 
-Wrap your letax codes between `$$`. See the live demo site.
+You can enable latex math support or asciimath support by adding `usemath: latex`
+or `usemath: ascii` front matter accordingly. Latex math notation must be wrapped
+inside \$\$, and asciimath notation must be wrapped inside \\`.
+
+For details and rendering result, see <https://unifreak.github.io/jekyll-theme-textalic/demo/Blogging>
 
 ### Series
 
