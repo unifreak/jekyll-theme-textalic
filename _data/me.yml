@@ -1,9 +1,9 @@
 # These data will be shown in /about page and every page footer
 # Replace these with your own personal info
 
-name: "YOUR NAME"
-job: "Job Title"
-hi: "HIYA!"
+name: "Song Seungho"
+job: "Back-end"
+hi: "데이터 전처리,Spring"
 avatar_img: "/assets/img/me.png" # path to your avatar
 intro:
   - "Some thing about yourself"
