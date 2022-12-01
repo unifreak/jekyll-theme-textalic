@@ -3,11 +3,11 @@
 
 name: "Song Seungho"
 job: "Back-end"
-hi: "데이터 전처리,Springs"
+hi: "데이터 전처리,Spring"
 avatar_img: "/assets/img/me.png" # path to your avatar
 intro:
-  - "Some thing about yourself"
-  - "Can have multiple lines"
+  - "개발내용 정리 Page"
+  - "해당 paga는 아직 정리중 입니다."
 skills:
   - name: "Programming"
     icon-class: "fa fa-terminal"
@@ -21,7 +21,7 @@ skills:
 
 display_name: "YOUR NAME"
 contact:
-  - {name: "Mobile", icon-class: "fa fa-phone-square", text: "123 4567 8910", link: "tel: 123 4567 8010"}
+  - {name: "Mobile", icon-class: "fa fa-phone-square", text: "010 9278 ****", link: "tel: 010 9278 ****"}
   - {name: "Email", icon-class: "fa fa-envelope", text: "example@example.com", link: "mailto: example@example.com"}
 social:
   - {name: "GitHub", icon-class: "fa fa-github-square", text: "https://github.com", link: "https://github.com"}
