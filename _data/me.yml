@@ -19,7 +19,7 @@ skills:
     icon-class: "fa fa-cogs"
     list: ["Linux", "Docker", "Git", "SublimeText"]
 
-display_name: "YOUR NAME"
+display_name: "SongS"
 contact:
   - {name: "Mobile", icon-class: "fa fa-phone-square", text: "010 9278 ****", link: "tel: 010 9278 ****"}
   - {name: "Email", icon-class: "fa fa-envelope", text: "example@example.com", link: "mailto: example@example.com"}
