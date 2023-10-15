@@ -6,7 +6,7 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
   syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
-    css_class: 'highlight'
+    css_class: "highlight"
   math_engine: mathjax
 
 plugins:
@@ -20,7 +20,7 @@ layout: post
 permalink: /:categories/:title
 excerpt_separator: "[-----]"
 
-url: # Required: replace this with your domain
+url: https://41vin.github.io # Required: replace this with your domain
 name: textalic # Required: will be displayed on every page's header
 title: site title # Required: site's default title
 shout: # Required: **TWO** lines, will be displayed on page's header.
@@ -30,7 +30,7 @@ description: "Some short description on your site" # Required
 
 disqus:
   comments: false # Global toggle on/off disqus comment
-  shortname:  # Required if you use disqus. Replace with your disqus shortname here
+  shortname: # Required if you use disqus. Replace with your disqus shortname here
 
 gitalk:
   comments: true # Global toggle on/off gitalk comment
@@ -41,7 +41,6 @@ gitalk:
   owner: unifreak
   admin: unifreak
   distraction_free_mode: true
-
 
 google_analytics:
   id: "" # Required if you use google analytics. Replace with your tracking id here
