@@ -58,8 +58,8 @@ defaults:
       layout: "post"
 
 # Analytics
- analytics:
-    provider                : "google-gtag"
-    google:
-        tracking_id         : "G-Y3JQ64LC5Z"
-        anonymize_ip        : false
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-Y3JQ64LC5Z"
+    anonymize_ip: false
