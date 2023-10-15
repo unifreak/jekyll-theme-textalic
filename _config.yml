@@ -29,8 +29,8 @@ shout: # Required: **TWO** lines, will be displayed on page's header.
 description: "Alvin's Dev Blog" # Required
 
 disqus:
-  comments: false # Global toggle on/off disqus comment
-  shortname: # Required if you use disqus. Replace with your disqus shortname here
+  comments: true # Global toggle on/off disqus comment
+  shortname: "alvinnote" # Required if you use disqus. Replace with your disqus shortname here
 
 gitalk:
   comments: true # Global toggle on/off gitalk comment
