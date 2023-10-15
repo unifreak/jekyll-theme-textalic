@@ -25,7 +25,7 @@ name: Alvin # Required: will be displayed on every page's header
 title: Alvin's Blog # Required: site's default title
 shout: # Required: **TWO** lines, will be displayed on page's header.
   - Passionate Researcher
-  - "I may be wrong"
+  - 내가 틀릴 수도 있습니다
 description: "Alvin's Dev Blog" # Required
 
 disqus:
