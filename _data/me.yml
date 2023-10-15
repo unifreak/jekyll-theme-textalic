@@ -1,27 +1,43 @@
 # These data will be shown in /about page and every page footer
 # Replace these with your own personal info
 
-name: "YOUR NAME"
-job: "Job Title"
-hi: "HIYA!"
+name: "Geon Kim"
+job: "5G Researcher"
+hi: "Glad to see you"
 avatar_img: "/assets/img/me.png" # path to your avatar
 intro:
-  - "Some thing about yourself"
-  - "Can have multiple lines"
+  - "Cloud Native 5G Core"
+  - "CNCF Open Sources"
+  - "Chaos Engineering"
 skills:
   - name: "Programming"
     icon-class: "fa fa-terminal"
-    list: ["PHP", "Python", "Shell", "C", "SQL"]
+    list: ["Python", "C++", "Shell"]
   - name: "Framework"
     icon-class: "fa fa-th-list"
-    list: ["Laravel / Lumen", "ThinkPHP", "Yii", "Flask"]
+    list: ["Kubernetes", "Jenkins", "Cilium", "gRPC", "Prometheus", "Grafana"]
   - name: "Tools"
     icon-class: "fa fa-cogs"
-    list: ["Linux", "Docker", "Git", "SublimeText"]
+    list: ["Linux", "Docker", "Git"]
 
-display_name: "YOUR NAME"
+display_name: "Geon Kim"
 contact:
-  - {name: "Mobile", icon-class: "fa fa-phone-square", text: "123 4567 8910", link: "tel: 123 4567 8010"}
-  - {name: "Email", icon-class: "fa fa-envelope", text: "example@example.com", link: "mailto: example@example.com"}
+  - {
+      name: "Mobile",
+      icon-class: "fa fa-phone-square",
+      text: "010 8011 9415",
+      link: "tel: 010 8011 9415",
+    }
+  - {
+      name: "Email",
+      icon-class: "fa fa-envelope",
+      text: "erudite.gun@gmail.com",
+      link: "mailto: erudite.gun@gmail.com",
+    }
 social:
-  - {name: "GitHub", icon-class: "fa fa-github-square", text: "https://github.com", link: "https://github.com"}
+  - {
+      name: "GitHub",
+      icon-class: "fa fa-github-square",
+      text: "My Github",
+      link: "https://github.com/41vin",
+    }
