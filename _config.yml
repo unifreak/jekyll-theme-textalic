@@ -33,7 +33,7 @@ disqus:
   shortname: "alvinnote" # Required if you use disqus. Replace with your disqus shortname here
 
 gitalk:
-  comments: true # Global toggle on/off gitalk comment
+  comments: false # Global toggle on/off gitalk comment
   # replace all of those below with your own
   client_id: baeea51800be67550b52
   client_secret: 4a521ccafa96b8b2b128659c35468bdd7ba5d4aa
@@ -56,3 +56,10 @@ defaults:
       path: ""
     values:
       layout: "post"
+
+# Analytics
+ analytics:
+    provider                : "google-gtag"
+    google:
+        tracking_id         : "G-Y3JQ64LC5Z"
+        anonymize_ip        : false
