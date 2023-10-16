@@ -6,7 +6,7 @@ usemath: [latex, ascii]
 
 
 
-This post is a summary of the presentation given by Junwoo Jung, a Solutions Architect, at AWS Summit Online Korea 2020.
+This post summarises the presentation given by Junwoo Jung, a Solutions Architect, at AWS Summit Online Korea 2020.
 
 
 
@@ -106,7 +106,7 @@ Chaos engineering is not about purposelessly destroying a system; it helps proac
 
     
 
-- - If an experiment doesn't maintain steady state, quickly and simply stop the experiment and roll back.
+- If an experiment doesn't maintain steady state, quickly and simply stop the experiment and roll back.
 
 
 
@@ -160,7 +160,7 @@ Chaos engineering is not about purposelessly destroying a system; it helps proac
 
 ### Network/Dependencies Level
 
-- **Injecting latency, loss and corrupting the network: tc, /etc/hosts, Blackholling**
+- ***Injecting latency, loss and corrupting the network: tc, /etc/hosts, Blackholling***
 
   
 
