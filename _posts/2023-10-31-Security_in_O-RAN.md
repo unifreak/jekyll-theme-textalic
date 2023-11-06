@@ -1,6 +1,6 @@
 ```category: 3GPP
 category: [Rimedo_Lab]
-tags: [LMF]
+tags: [O-RAN]
 usemath: [latex, ascii] 
 ```
 
