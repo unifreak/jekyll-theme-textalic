@@ -4,36 +4,63 @@ tags: [CKA]
 usemath: [latex, ascii]
 ---
 
-# Back up ETCD 
+# Backing up an etcd cluster
 
-## Snapshot using etcdctl options
+All Kubernetes objects are stored on etcd. Periodically backing up the etcd cluster data is important to recover Kubernetes under disaster scenarios, such as losing all control plane nodes. The snapshot file contains all the Kubernetes states and critical information. In order to keep the sensitive Kubernetes data safe, encrypt the snapshot files.
 
-Also take the snapshot using various options given by etcdctl.
+Backing up an etcd cluster can be accomplished in two ways: etcd built-in snapshot and volume snapshot.
+
+## Built-in snapshot
+
+ etcd supports built-in snapshot. A snapshot may either be taken from a live member with the <code>etcdctl snapshot save</code> command or by copying the <code>member/snap/db</code> file from an etcd data directory taht is not currently used by an etcd process. Taking the snapshot will not affect the performance of the member.
+
+ Below is an example for taking a snapshot of the keyspace served by <code>$ENDPOINT</code> to the file <code>snapshot.db</code>:
 
 ```bash
-$ ETCDCTL_API=3 etcdctl -h
+ETCDCTL_API=3 etcdctl --endpoints $ENDPOINT snapshot save snapshot.db
 ```
 
-will list various options available from etcdctl.
+## Volume snapshot
+
+CKA에서 다루지 않으므로 생략함
+
+
+
+### Snapshot using etcdctl options
+
+We can also take the snapshot using various options given by etcdctl. For example
 
 ```bash
-$ ETCDCTL_API=3 etcdctl --endpoints=https://127.0.0.1:2379 \
+ETCDCTL_API=3 etcdctl -h
+```
+
+will list various options available from etcdctl. For example, you can take a snapshot by specifying the endpoint, certificates etc as shown below:
+
+```bash
+ETCDCTL_API=3 etcdctl --endpoints=https://127.0.0.1:2379 \
   --cacert=<trusted-ca-file> --cert=<cert-file> --key=<key-file> \
   snapshot save <backup-file-location>
 ```
 
-where <mark>trusted-ca-file</mark>, <mark>cert-file</mark>, and <mark>key-file</mark> can be obtained from the description of the etcd Pod.
 
 
-
-CKA Lightning Lab에서는 다음과 같은 커맨드를 입력한다.
+이 과정에서 <trusted-ca-file>, <cert-file>, <key-file>의 경로를 파악하기 위해 아래와 같은 커맨드를 사용한다.
 
 ```bash
-$ export ETCDCTL_API=3
-etcdctl snapshot save --cacert=/etc/kubernetes/pki/etcd/ca.crt --cert=/etc/kubernetes/pki/etcd/server.crt --key=/etc/kubernetes/pki/etcd/server.key --endpoints=127.0.0.1:2379 /opt/etcd-backup.db
+cat /etc/kubernetes/manifests/etcd/yaml | grep file
 ```
 
-s
+
+
+또한, endpoints의 IP 주소를 얻기 위해 
+
+```
+vi /etc/kubernetes/manifests/etcd/yaml
+```
+
+실행 후, <code>--listen-client-urls</code>를 복사한다.
+
+
 
 ## Restoring an etcd cluster
 

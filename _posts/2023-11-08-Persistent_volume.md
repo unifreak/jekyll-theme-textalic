@@ -22,42 +22,25 @@ A PersistentVolumeClaim(PVC) is a request for storage by a user. It is similar t
 
 
 
-공식 Yaml 파일
+## Claims As Volumes
+
+Pods access storage by using the claim as a volume. Claims must exist in the same namespace as the Pod using the claim. The cluster finds the claim in the Pod's namespace and use it to get the PersistentVolume backing the claim. The volume is then mounted to the host into the Pod.
 
 ```yaml
 apiVersion: v1
-kind: PersistentVolume
+kind: Pod
 metadata:
-  name: pv0003
+  name: mypod
 spec:
-  capacity:
-    storage: 5Gi
-  volumeMode: Filesystem
-  accessModes:
-    - ReadWriteOnce
-  persistentVolumeReclaimPolicy: Recycle
-  storageClassName: slow
+  containers:
+    - name: myfrontend
+      image: nginx
+      volumeMounts:
+      - mountPath: "/var/www/html"
+        name: mypd
+  volumes:
+    - name: mypd
+      persistentVolumeClaim:
+        claimName: myclaim
 ```
 
-
-
-위의 템플릿을 수정하여 다음과 같이 만든다.
-
-```yaml
-apiVersion: v1
-kind: PersistentVolume
-metadata:
-  name: pv0003
-spec:
-  capacity:
-    storage: 5Gi
-  volumeMode: Filesystem
-  accessModes:
-    - ReadWriteMany
-  hostPath:
-    path: /pv/data-analytics
-```
-
-
-
-pv를 만들 때 반드시 pvc가 있어야 하는 것은 아니다!
