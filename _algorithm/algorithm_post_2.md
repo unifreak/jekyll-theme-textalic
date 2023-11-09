@@ -1,4 +1,7 @@
 ---
+
+---
+
 # Data Types
 
 ## Data Types: Floating Point Numbers
@@ -24,8 +27,6 @@ A boolean variable (declared as a <kbd>bool</kbd>) can only take on the value of
 ### Strings
 
 A string is a collection of text, numbers, or symbols. Strings are always surrounded by quotation marks.
-
----
 
 # Declaring Variables
 
