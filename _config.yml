@@ -48,7 +48,9 @@ google_analytics:
 collections: # Define post series here
   algorithm:
     output: true
-  3GPP:
+  CKA:
+    output: true
+  O-RAN_Alliance:
     output: true
 
 defaults:
